@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-image: url('menu/background300_300.png');" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="11.0" layoutY="29.0" text="Flappy Bird connect to Server" textFill="#e3c813">
+         <font>
+            <Font name="MKARCADECAPS" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ipTextField" layoutX="76.0" layoutY="110.0" promptText="IP Adress">
+         <font>
+            <Font name="MKARCADECAPS" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="portTextField" layoutX="76.0" layoutY="178.0" promptText="Port">
+         <font>
+            <Font name="MKARCADECAPS" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="76.0" layoutY="76.0" text="IP Adress:" textFill="#e3c813">
+         <font>
+            <Font name="MKARCADECAPS" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="143.0" text="Port:" textFill="#e3c813">
+         <font>
+            <Font name="MKARCADECAPS" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="connectButton" layoutX="92.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#connect" style="-fx-border-color: #E3C813; -fx-border-width: 5;" text="Connect" textFill="#e3c813">
+         <font>
+            <Font name="MKARCADECAPS" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

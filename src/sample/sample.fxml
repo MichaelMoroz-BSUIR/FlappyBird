@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane fx:id="gamePane" disable="true" focusTraversable="true" onKeyPressed="#handleKeyPressGame" visible="false">
+            <children>
+                <Canvas fx:id="canvas" focusTraversable="true" height="600.0" nodeOrientation="INHERIT" width="900.0" />
+            </children>
+        </Pane>
+        <Pane fx:id="menuPane" disable="true" focusTraversable="true" style="-fx-background-image: url('menu/SplashScreen.png');" visible="false">
+            <children>
+                <ImageView fx:id="imageViewPlay" fitHeight="56.0" fitWidth="148.0" layoutX="376.0" layoutY="284.0" onMouseClicked="#startGame" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('menu/play148_56nc.png');" />
+                <ImageView fx:id="imageViewAbout" fitHeight="56.0" fitWidth="184.0" layoutX="358.0" layoutY="412.0" onMouseClicked="#viewAbout" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('menu/about184_56nc.png');" />
+                <ImageView fx:id="imageViewExit" fitHeight="56.0" fitWidth="132.0" layoutX="384.0" layoutY="476.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('menu/exit132_56nc.png');" />
+                <ImageView fx:id="imageViewSound" fitHeight="62.0" fitWidth="70.0" layoutX="40.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('menu/sound_off.png');" />
+                <ImageView fx:id="imageViewOnline" fitHeight="56.0" fitWidth="192.0" layoutX="354.0" layoutY="348.0" onMouseClicked="#viewConnectDialog" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('menu/online192_56nc.png');" />
+            </children>
+        </Pane>
+        <Pane fx:id="pausePane" disable="true" focusTraversable="true" onKeyPressed="#handlePauseKeyPress" visible="false">
+            <children>
+                <ImageView fitHeight="230.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('pause/pause.png')" x="245.0" y="185.0" />
+            </children>
+        </Pane>
+      <Pane fx:id="gameEndPane" disable="true" focusTraversable="true" onKeyPressed="#handlePauseKeyPress" visible="false">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('game/game_over.png');" x="285.0" y="185.0" />
+         </children>
+      </Pane>
+    </children>
+</StackPane>
