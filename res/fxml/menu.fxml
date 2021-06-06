@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane fx:id="root" focusTraversable="true" prefHeight="600.0" prefWidth="900.0"
+      style="-fx-background-image: url('img/menu/SplashScreen.png');"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Menu">
+    <children>
+        <ImageView fx:id="gameImg" fitHeight="56.0" fitWidth="148.0" layoutX="376.0" layoutY="284.0" pickOnBounds="true"
+                   preserveRatio="true" style="-fx-image: url('img/menu/play148_56nc.png');"/>
+        <ImageView fx:id="aboutImg" fitHeight="56.0" fitWidth="184.0" layoutX="358.0" layoutY="412.0"
+                   pickOnBounds="true" preserveRatio="true" style="-fx-image: url('img/menu/about184_56nc.png');"/>
+        <ImageView fx:id="exitImg" fitHeight="56.0" fitWidth="132.0" layoutX="384.0" layoutY="476.0" pickOnBounds="true"
+                   preserveRatio="true" style="-fx-image: url('img/menu/exit132_56nc.png');"/>
+        <ImageView fx:id="songImg" fitHeight="62.0" fitWidth="70.0" layoutX="40.0" layoutY="498.0" pickOnBounds="true"
+                   preserveRatio="true" style="-fx-image: url('img/menu/sound_off.png');"/>
+        <ImageView fx:id="onlineImg" fitHeight="56.0" fitWidth="192.0" layoutX="354.0" layoutY="348.0"
+                   pickOnBounds="true" preserveRatio="true" style="-fx-image: url('img/menu/online192_56nc.png');"/>
+    </children>
+</Pane>

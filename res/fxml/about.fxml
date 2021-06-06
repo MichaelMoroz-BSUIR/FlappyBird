@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.Pane?>
+<Pane fx:id="root" fx:controller="client.About" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="600.0" style="-fx-background-image: url('img/menu/About.png');" xmlns="http://javafx.com/javafx/8.0.251"
+      xmlns:fx="http://javafx.com/fxml/1"/>
